@@ -1,0 +1,83 @@
+{
+	"header": {
+		"name": "Nikolaos Kourniotis",
+		"title": "Frontend Developer (React, TypeScript, Ionic)",
+		"location": "Mexborough/Doncaster, UK",
+		"phone": "07721847499",
+		"email": "nikourn@gmail.com",
+		"github": "https://github.com/NiKourn"
+	},
+	"summary": "A Frontend Developer with 3+ years of professional experience building production-grade web and mobile applications. Skilled in React, TypeScript, Ionic, and Firebase, with additional experience in backend APIs and real-time communication using Socket.IO. Proven track record of delivering features end-to-end, identifying business logic improvements, and collaborating in Agile teams. Trusted to work independently while ensuring scalable, maintainable solutions.",
+	"experience": [
+		{
+			"company": "History & Heraldry",
+			"role": "Frontend Developer",
+			"period": "May 2022 – Present",
+			"location": "Rotherham, UK",
+			"items": [
+				"Built and maintained multiple B2B and internal apps using React, TypeScript, Ionic, and React Query.",
+				"Developed undo functionality, complex cart flows, and push notification features using Firebase Messaging.",
+				"Implemented multi-environment setup (dev/test/prod) for mobile apps (iOS/Android).",
+				"Reduced API load and improved responsiveness through optimized React Query caching.",
+				"Introduced end-to-end tests with Cypress, reducing regression bugs.",
+				"Collaborated with senior developers in feature spikes, consistently delivering complete technical breakdowns.",
+				"Identified and raised critical business logic bug fixes, leading to process improvements.",
+				"Maintained and extended a React Native app (Agent app) used by sales agents, adding features and ensuring stability.",
+				"Looked after a Next.js app (Barqoder) that integrates with backend APIs, managing frontend features and deployments."
+			]
+		},
+		{
+			"company": "nITc",
+			"role": "Freelancer Web Developer & IT Engineer",
+			"period": "Mar 2021 – May 2022",
+			"location": "Great Yarmouth, UK",
+			"items": [
+				"Delivered small-scale websites and IT services for local businesses.",
+				"Built and maintained WordPress solutions, handling both frontend and backend tasks."
+			]
+		},
+		{
+			"company": "PC Corner",
+			"role": "Web Developer & IT Assistant",
+			"period": "Feb 2016 – Jun 2019",
+			"location": "Athens, GR",
+			"items": [
+				"Built e-commerce and corporate websites with WordPress, WooCommerce, and custom plugins.",
+				"Provided IT support and troubleshooting for local clients."
+			]
+		}
+	],
+	"skills": [
+		{
+			"title": "Frontend",
+			"items": [
+				"React",
+				"Next.js",
+				"React Native",
+				"TypeScript",
+				"React Query",
+				"Ionic",
+				"Tailwind CSS",
+				"Cypress",
+				"HTML/CSS/JS"
+			]
+		},
+		{
+			"title": "Backend & APIs",
+			"items": ["Node.js (basic)", "REST APIs", "Socket.IO", "Firebase (Messaging, Auth)"]
+		},
+		{
+			"title": "Other",
+			"items": ["Agile/Jira", "Git", "MySQL", "Docker"]
+		},
+		{
+			"title": "Legacy/Additional",
+			"items": ["PHP", "WordPress", "jQuery", "SASS/SCSS"]
+		}
+	],
+	"education": [
+		"Institute of Vocation Training — Computers and Electronics Office Machines Engineer (Jul 2003, Aigaleo, GR)",
+		"Electronics College — Computer Electronic Systems and Networks (Jul 2002, Dafni, GR)"
+	],
+	"interests": ["🎸 Guitar & Drums (former alternative rock band member)"]
+}

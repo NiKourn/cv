@@ -31,16 +31,19 @@
 				font-size: 16px;
 				margin-top: 1em;
 			}
-			.header {
+			header {
 				text-align: center;
 				margin-bottom: 30px;
 			}
-			.header a {
+			header a {
 				color: #0073e6;
 				text-decoration: none;
 			}
-			.section {
+			section {
 				margin-bottom: 20px;
+			}
+			article {
+				padding-left: 15px;
 			}
 			ul {
 				margin: 0;
@@ -50,15 +53,16 @@
 				margin-bottom: 0.4em;
 			}
 			.skills {
-				columns: 2; /* splits skills into two columns */
+				columns: 2;
 			}
 			.job {
 				display: flex;
 				justify-content: space-between;
 				align-items: baseline;
 				margin-top: 1em;
-				margin-bottom: 1em;
+				margin-bottom: 0.5em;
 				border-bottom: 1px solid #f5f5f5;
+				padding-bottom: 4px;
 			}
 			.job h3 {
 				margin: 0;
@@ -68,8 +72,6 @@
 				font-size: 14px;
 				color: #555;
 			}
-
-			/* Divider styles */
 			.divider-lg {
 				margin: 0 10px;
 				font-size: 20px;
@@ -83,105 +85,115 @@
 		</style>
 	</head>
 	<body>
-		<div class="header">
-			<h1>Nikolaos Kourniotis</h1>
-			<p>Frontend Developer (React, TypeScript, Ionic)</p>
-			<p>
-				Mexborough/Doncaster, UK · 07721847499
-				<span class="divider-lg">❖</span>
-				<a href="mailto:nikourn@gmail.com">nikourn@gmail.com</a>
-				<span class="divider-lg">❖</span>
-				<a href="https://github.com/NiKourn">github.com/NiKourn</a>
-			</p>
+		<!-- Loader overlay -->
+		<div
+			id="loader"
+			style="
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background: #fff;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 24px;
+				z-index: 9999;
+			">
+			Loading CV...
 		</div>
 
-		<div class="section">
+		<header id="cv-header">
+			<h1></h1>
+			<p></p>
+			<p></p>
+		</header>
+
+		<section id="summary-section">
 			<h2>Professional Summary</h2>
-			<p>
-				A Frontend Developer with 3+ years of professional experience building production-grade web and mobile
-				applications. Skilled in React, TypeScript, Ionic, and Firebase, with additional experience in backend APIs and
-				real-time communication using Socket.IO. Proven track record of delivering features end-to-end, identifying
-				business logic improvements, and collaborating in Agile teams. Trusted to work independently while ensuring
-				scalable, maintainable solutions.
-			</p>
-		</div>
+			<p></p>
+		</section>
 
-		<div class="section">
+		<section id="experience-section">
 			<h2>Experience</h2>
+		</section>
 
-			<div class="job">
-				<h3>History & Heraldry — Frontend Developer</h3>
-				<span>May 2022 – Present <span class="divider-sm">❖</span> Rotherham, UK</span>
-			</div>
-			<ul>
-				<li>Built and maintained multiple B2B and internal apps using React, TypeScript, Ionic, and React Query.</li>
-				<li>
-					Developed undo functionality, complex cart flows, and push notification features using Firebase Messaging.
-				</li>
-				<li>Implemented multi-environment setup (dev/test/prod) for mobile apps (iOS/Android).</li>
-				<li>Reduced API load and improved responsiveness through optimized React Query caching.</li>
-				<li>Introduced end-to-end tests with Cypress, reducing regression bugs.</li>
-				<li>
-					Collaborated with senior developers in feature spikes, consistently delivering complete technical breakdowns.
-				</li>
-				<li>Identified and raised critical business logic bug fixes, leading to process improvements.</li>
-				<li>
-					Maintained and extended a <strong>React Native app (Agent app)</strong> used by sales agents, adding features
-					and ensuring stability.
-				</li>
-				<li>
-					Looked after a <strong>Next.js app (Barqoder)</strong> that integrates with backend APIs, managing frontend
-					features and deployments.
-				</li>
-			</ul>
-
-			<div class="job">
-				<h3>nITc — Freelancer Web Developer & IT Engineer</h3>
-				<span>Mar 2021 – May 2022 <span class="divider-sm">❖</span> Great Yarmouth, UK</span>
-			</div>
-			<ul>
-				<li>Delivered small-scale websites and IT services for local businesses.</li>
-				<li>Built and maintained WordPress solutions, handling both frontend and backend tasks.</li>
-			</ul>
-
-			<div class="job">
-				<h3>PC Corner — Web Developer & IT Assistant</h3>
-				<span>Feb 2016 – Jun 2019 <span class="divider-sm">❖</span> Athens, GR</span>
-			</div>
-			<ul>
-				<li>Built e-commerce and corporate websites with WordPress, WooCommerce, and custom plugins.</li>
-				<li>Provided IT support and troubleshooting for local clients.</li>
-			</ul>
-
-			<p><em>Earlier IT roles available on request.</em></p>
-		</div>
-
-		<div class="section">
+		<section id="skills-section">
 			<h2>Skills</h2>
-			<div class="skills">
-				<ul>
-					<li>
-						<strong>Frontend:</strong> React, Next.js, React Native, TypeScript, React Query, Ionic, Tailwind CSS,
-						Cypress, HTML/CSS/JS
-					</li>
-					<li><strong>Backend & APIs:</strong> Node.js (basic), REST APIs, Socket.IO, Firebase (Messaging, Auth)</li>
-					<li><strong>Other:</strong> Agile/Jira, Git, MySQL, Docker</li>
-					<li><strong>Legacy/Additional:</strong> PHP, WordPress, jQuery, SASS/SCSS</li>
-				</ul>
-			</div>
-		</div>
+			<div id="skills-container" class="skills"></div>
+		</section>
 
-		<div class="section">
+		<section id="education-section">
 			<h2>Education</h2>
-			<p>
-				Institute of Vocation Training — Computers and Electronics Office Machines Engineer (Jul 2003, Aigaleo, GR)<br />
-				Electronics College — Computer Electronic Systems and Networks (Jul 2002, Dafni, GR)
-			</p>
-		</div>
+		</section>
 
-		<div class="section">
+		<section id="interests-section">
 			<h2>Interests</h2>
-			<p>🎸 Guitar & Drums (former alternative rock band member)</p>
-		</div>
+		</section>
+
+		<script>
+			const loader = document.getElementById('loader')
+
+			fetch('./data/cv.json')
+				.then((res) => res.json())
+				.then((data) => {
+					// Header
+					const header = document.getElementById('cv-header')
+					header.querySelector('h1').textContent = data.header.name
+					header.querySelector('p:nth-of-type(1)').textContent = data.header.title
+					header.querySelector('p:nth-of-type(2)').innerHTML = `
+          ${data.header.location} · ${data.header.phone} 
+          <span class="divider-lg">❖</span> 
+          <a href="mailto:${data.header.email}">${data.header.email}</a> 
+          <span class="divider-lg">❖</span> 
+          <a href="${data.header.github}" target="_blank">${data.header.github}</a>
+        `
+
+					// Summary
+					document.querySelector('#summary-section p').textContent = data.summary
+
+					// Experience
+					const expSection = document.getElementById('experience-section')
+					data.experience.forEach((job) => {
+						const article = document.createElement('article')
+						article.innerHTML = `
+            <div class="job">
+              <h3>${job.company} — ${job.role}</h3>
+              <span>${job.period} <span class="divider-sm">❖</span> ${job.location}</span>
+            </div>
+            <ul>${job.items.map((item) => `<li>${item}</li>`).join('')}</ul>
+          `
+						expSection.appendChild(article)
+					})
+
+					// Skills
+					const skillsContainer = document.getElementById('skills-container')
+					skillsContainer.innerHTML = data.skills
+						.map(
+							(skill) => `
+          <ul>
+            <li><strong>${skill.title}:</strong> ${skill.items.join(', ')}</li>
+          </ul>
+        `
+						)
+						.join('')
+
+					// Education
+					const eduSection = document.getElementById('education-section')
+					eduSection.innerHTML += data.education.map((edu) => `<p>${edu}</p>`).join('')
+
+					// Interests
+					const interestsSection = document.getElementById('interests-section')
+					interestsSection.innerHTML += data.interests.map((i) => `<p>${i}</p>`).join('')
+
+					// Hide loader after everything is rendered
+					loader.style.display = 'none'
+				})
+				.catch((err) => {
+					console.error(err)
+					loader.textContent = 'Failed to load CV.'
+				})
+		</script>
 	</body>
 </html>
