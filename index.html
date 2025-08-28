@@ -2,198 +2,43 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<title>Nikolaos Kourniotis</title>
+		<title>CV</title>
 		<link rel="icon" type="image/png" href="assets/favicon.svg" />
-		<style>
-			body {
-				font-family: 'Garamond', 'Times New Roman', serif;
-				margin: 40px auto;
-				max-width: 1200px;
-				line-height: 1.5;
-				color: #333;
-			}
-			h1,
-			h2,
-			h3 {
-				margin-bottom: 0.3em;
-			}
-			h1 {
-				font-size: 28px;
-				margin-top: 0;
-			}
-			h2 {
-				font-size: 20px;
-				margin-top: 1.2em;
-				border-bottom: 2px solid #ddd;
-				padding-bottom: 4px;
-			}
-			h3 {
-				font-size: 16px;
-				margin-top: 1em;
-			}
-			header {
-				text-align: center;
-				margin-bottom: 30px;
-			}
-			header a {
-				color: #0073e6;
-				text-decoration: none;
-			}
-			section {
-				margin-bottom: 20px;
-			}
-			article {
-				padding-left: 15px;
-			}
-			ul {
-				margin: 0;
-				padding-left: 20px;
-			}
-			li {
-				margin-bottom: 0.4em;
-			}
-			.skills {
-				columns: 2;
-			}
-			.job {
-				display: flex;
-				justify-content: space-between;
-				align-items: baseline;
-				margin-top: 1em;
-				margin-bottom: 0.5em;
-				border-bottom: 1px solid #f5f5f5;
-				padding-bottom: 4px;
-			}
-			.job h3 {
-				margin: 0;
-				font-size: 16px;
-			}
-			.job span {
-				font-size: 14px;
-				color: #555;
-			}
-			.divider-lg {
-				margin: 0 10px;
-				font-size: 20px;
-				color: #444;
-			}
-			.divider-sm {
-				margin: 0 6px;
-				font-size: 12px;
-				color: #666;
-			}
-		</style>
+		<link rel="stylesheet" href="assets/style.css" />
 	</head>
 	<body>
-		<!-- Loader overlay -->
-		<div
-			id="loader"
-			style="
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background: #fff;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				font-size: 24px;
-				z-index: 9999;
-			">
-			Loading CV...
+		<div id="loader" style="display: block">Loading CV...</div>
+
+		<div id="cv" style="display: none">
+			<header id="cv-header" class="hidden">
+				<h1></h1>
+				<p></p>
+				<p></p>
+			</header>
+
+			<section id="summary-section" class="hidden">
+				<h2>Professional Summary</h2>
+				<p></p>
+			</section>
+
+			<section id="experience-section" class="hidden">
+				<h2>Experience</h2>
+			</section>
+
+			<section id="skills-section" class="hidden">
+				<h2>Skills</h2>
+				<div id="skills-container"></div>
+			</section>
+
+			<section id="education-section" class="hidden">
+				<h2>Education</h2>
+			</section>
+
+			<section id="interests-section" class="hidden">
+				<h2>Interests</h2>
+			</section>
 		</div>
 
-		<header id="cv-header">
-			<h1></h1>
-			<p></p>
-			<p></p>
-		</header>
-
-		<section id="summary-section">
-			<h2>Professional Summary</h2>
-			<p></p>
-		</section>
-
-		<section id="experience-section">
-			<h2>Experience</h2>
-		</section>
-
-		<section id="skills-section">
-			<h2>Skills</h2>
-			<div id="skills-container" class="skills"></div>
-		</section>
-
-		<section id="education-section">
-			<h2>Education</h2>
-		</section>
-
-		<section id="interests-section">
-			<h2>Interests</h2>
-		</section>
-
-		<script>
-			const loader = document.getElementById('loader')
-
-			fetch('./data/cv.json')
-				.then((res) => res.json())
-				.then((data) => {
-					// Header
-					const header = document.getElementById('cv-header')
-					header.querySelector('h1').textContent = data.header.name
-					header.querySelector('p:nth-of-type(1)').textContent = data.header.title
-					header.querySelector('p:nth-of-type(2)').innerHTML = `
-          ${data.header.location} · ${data.header.phone} 
-          <span class="divider-lg">❖</span> 
-          <a href="mailto:${data.header.email}">${data.header.email}</a> 
-          <span class="divider-lg">❖</span> 
-          <a href="${data.header.github}" target="_blank">${data.header.github}</a>
-        `
-
-					// Summary
-					document.querySelector('#summary-section p').textContent = data.summary
-
-					// Experience
-					const expSection = document.getElementById('experience-section')
-					data.experience.forEach((job) => {
-						const article = document.createElement('article')
-						article.innerHTML = `
-            <div class="job">
-              <h3>${job.company} — ${job.role}</h3>
-              <span>${job.period} <span class="divider-sm">❖</span> ${job.location}</span>
-            </div>
-            <ul>${job.items.map((item) => `<li>${item}</li>`).join('')}</ul>
-          `
-						expSection.appendChild(article)
-					})
-
-					// Skills
-					const skillsContainer = document.getElementById('skills-container')
-					skillsContainer.innerHTML = data.skills
-						.map(
-							(skill) => `
-          <ul>
-            <li><strong>${skill.title}:</strong> ${skill.items.join(', ')}</li>
-          </ul>
-        `
-						)
-						.join('')
-
-					// Education
-					const eduSection = document.getElementById('education-section')
-					eduSection.innerHTML += data.education.map((edu) => `<p>${edu}</p>`).join('')
-
-					// Interests
-					const interestsSection = document.getElementById('interests-section')
-					interestsSection.innerHTML += data.interests.map((i) => `<p>${i}</p>`).join('')
-
-					// Hide loader after everything is rendered
-					loader.style.display = 'none'
-				})
-				.catch((err) => {
-					console.error(err)
-					loader.textContent = 'Failed to load CV.'
-				})
-		</script>
+		<script src="assets/cv.js"></script>
 	</body>
 </html>

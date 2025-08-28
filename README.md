@@ -15,13 +15,16 @@ This repository contains a dynamic CV website. The website loads all content fro
 <pre class="overflow-visible!" data-start="825" data-end="903"><div class="contain-inline-size rounded-2xl relative bg-token-sidebar-surface-primary"><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre!"><span><span>cv/
 ├─ assets/
 │  └─ favicon.svg
-├─ cv.json
+│  └─ cv.js
+│  └─ style.css
+├─ data/
+│  └─ cv.json
 ├─ </span><span>index</span><span>.html
 └─ README.md
 </span></span></code></div></div></pre>
 
 - `assets/` — Contains favicon and other static assets.
-- `cv.json` — Stores all CV content.
+- `data/` — Stores all CV data.
 - `index.html` — Main HTML file.
 - `README.md` — This file.
 
@@ -74,6 +77,8 @@ This repository contains a dynamic CV website. The website loads all content fro
 
 **Option 1: Using Python (recommended)**
 
+Install Python based on your system
+
 Python 3:
 
 <pre class="overflow-visible!" data-start="1953" data-end="2006"><div class="contain-inline-size rounded-2xl relative bg-token-sidebar-surface-primary"><div class="sticky top-9"><div class="absolute end-0 bottom-0 flex h-9 items-center pe-2"><div class="bg-token-bg-elevated-secondary text-token-text-secondary flex items-center gap-4 rounded-sm px-2 font-sans text-xs"></div></div></div><div class="overflow-y-auto p-4" dir="ltr"><code class="whitespace-pre! language-bash"><span><span>cd</span><span> path/to/cv
@@ -90,7 +95,7 @@ Then open your browser at:
 
 `http://localhost:8000`
 
-**Option 2: Using VS Code Live Server Extension**
+**Option 2: Using VS Code Live Server Extension (If used)**
 
 1. Open the project in VS Code.
 2. Install the **Live Server** extension.
@@ -109,6 +114,6 @@ Then open your browser at:
 
 ## Notes
 
-- Ensure `cv.json` is in the same directory as `index.html`.
+- Ensure `cv.json` is in the data folder.
 - The project uses **fetch** , so running it with `file://` will fail due to browser CORS restrictions — always use a local server for development.
 - You can easily update the CV content by editing `cv.json` without touching the HTML.
