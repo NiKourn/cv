@@ -5,9 +5,10 @@
 		"location": "Mexborough/Doncaster, UK",
 		"phone": "07721847499",
 		"email": "nikourn@gmail.com",
-		"github": "https://github.com/NiKourn"
+		"github": "https://github.com/NiKourn",
+		"linkedin": "https://www.linkedin.com/in/nikolaos-kourniotis779/"
 	},
-	"summary": "A Frontend Developer with 3+ years of professional experience building production-grade web and mobile applications. Skilled in React, TypeScript, Ionic, and Firebase, with additional experience in backend APIs and real-time communication using Socket.IO. Proven track record of delivering features end-to-end, identifying business logic improvements, and collaborating in Agile teams. Trusted to work independently while ensuring scalable, maintainable solutions.",
+	"summary": "Frontend Developer with 3+ years of professional experience in the UK, building web and mobile applications. Skilled in React, TypeScript, Ionic, and Firebase. Experienced in Agile workflows, delivering maintainable and scalable solutions with meticulous attention to detail. Passionate about learning new technologies and collaborating in dynamic teams.",
 	"experience": [
 		{
 			"company": "History & Heraldry",
@@ -15,15 +16,12 @@
 			"period": "May 2022 – Present",
 			"location": "Rotherham, UK",
 			"items": [
-				"Built and maintained multiple B2B and internal apps using React, TypeScript, Ionic, and React Query.",
-				"Developed undo functionality, complex cart flows, and push notification features using Firebase Messaging.",
-				"Implemented multi-environment setup (dev/test/prod) for mobile apps (iOS/Android).",
-				"Reduced API load and improved responsiveness through optimized React Query caching.",
-				"Introduced end-to-end tests with Cypress, reducing regression bugs.",
-				"Collaborated with senior developers in feature spikes, consistently delivering complete technical breakdowns.",
-				"Identified and raised critical business logic bug fixes, leading to process improvements.",
-				"Maintained and extended a React Native app (Agent app) used by sales agents, adding features and ensuring stability.",
-				"Looked after a Next.js app (Barqoder) that integrates with backend APIs, managing frontend features and deployments."
+				"Build and maintain internal and customer-facing web and mobile applications using React, TypeScript, Ionic, and React Query.",
+				"Develop new features, fix issues, and optimize performance across web, Android, and iOS platforms.",
+				"Maintain a React Native Agent app and a Next.js Barqoder app, ensuring stability and feature enhancements.",
+				"Collaborate on feature planning and technical decisions in Agile sprints.",
+				"Manage tasks in Jira and implement solutions according to business logic and client requirements.",
+				"Introduce testing (Cypress) and performance improvements to enhance reliability and responsiveness."
 			]
 		},
 		{
@@ -33,7 +31,7 @@
 			"location": "Great Yarmouth, UK",
 			"items": [
 				"Delivered small-scale websites and IT services for local businesses.",
-				"Built and maintained WordPress solutions, handling both frontend and backend tasks."
+				"Built and maintained WordPress websites and plugins, handling both frontend and backend tasks."
 			]
 		},
 		{

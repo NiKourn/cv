@@ -34,6 +34,7 @@ header {
 header a {
 	color: #0073e6;
 	text-decoration: none;
+	margin: 0 5px;
 }
 
 section {

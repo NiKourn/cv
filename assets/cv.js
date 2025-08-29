@@ -15,9 +15,18 @@ fetch('./data/cv.json')
 		// Header
 		header.querySelector('h1').textContent = data.header.name
 		header.querySelector('p:nth-of-type(1)').textContent = data.header.title
-		header.querySelector(
-			'p:nth-of-type(2)'
-		).innerHTML = `${data.header.location} · ${data.header.phone} <span class="divider-lg">❖</span> <a href="mailto:${data.header.email}">${data.header.email}</a> <span class="divider-lg">❖</span> <a href="${data.header.github}" target="_blank">${data.header.github}</a>`
+		header.querySelector('p:nth-of-type(2)').innerHTML = `
+		${data.header.location} · ${data.header.phone} 
+  		<a href="mailto:${data.header.email}" title="Email">
+    		<i class="fas fa-envelope"></i>
+  		</a>
+		<a href="${data.header.github}" target="_blank" title="GitHub">
+			<i class="fab fa-github"></i>
+		</a>
+		<a href="${data.header.linkedin}" target="_blank" title="LinkedIn">
+			<i class="fab fa-linkedin"></i>
+		</a>`
+
 		header.classList.remove('hidden')
 
 		// Summary
