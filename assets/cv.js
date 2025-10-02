@@ -11,6 +11,7 @@ fetch('./data/cv.json')
 		const skillsContainer = document.getElementById('skills-container')
 		const eduSection = document.getElementById('education-section')
 		const interestsSection = document.getElementById('interests-section')
+		const referencesSection = document.getElementById('references-section')
 
 		// Header
 		header.querySelector('h1').textContent = data.header.name
@@ -62,6 +63,10 @@ fetch('./data/cv.json')
 		// Interests
 		interestsSection.innerHTML += data.interests.map((i) => `<p>${i}</p>`).join('')
 		interestsSection.classList.remove('hidden')
+
+		// References
+		referencesSection.innerHTML += data.references.map((i) => `<p>${i}</p>`).join('')
+		referencesSection.classList.remove('hidden')
 
 		// Hide loader
 		setTimeout(() => {
