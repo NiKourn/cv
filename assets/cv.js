@@ -4,14 +4,9 @@ fetch('./data/cv.json')
 		// Set dynamic title
 		document.title = `${data.header.name} | ${data.header.title}`
 
-		// Get all elements
+		// Get elements
 		const header = document.getElementById('cv-header')
-		const summary = document.querySelector('#summary-section p')
-		const expSection = document.getElementById('experience-section')
-		const skillsContainer = document.getElementById('skills-container')
-		const eduSection = document.getElementById('education-section')
-		const interestsSection = document.getElementById('interests-section')
-		const referencesSection = document.getElementById('references-section')
+		const sectionsContainer = document.getElementById('sections-container')
 
 		// Header
 		header.querySelector('h1').textContent = data.header.name
@@ -30,43 +25,68 @@ fetch('./data/cv.json')
 
 		header.classList.remove('hidden')
 
-		// Summary
-		summary.textContent = data.summary
-		document.getElementById('summary-section').classList.remove('hidden')
+		// Define sections configuration from cv.json
+		const sections = [
+			{
+				id: 'summary-section',
+				title: 'Professional Summary',
+				render: () => `<p>${data.summary}</p>`,
+			},
+			{
+				id: 'experience-section',
+				title: 'Experience',
+				render: () =>
+					data.experience
+						.map(
+							(job) => `
+					<article>
+						<div class="job">
+							<h3>${job.company} — ${job.role}</h3>
+							<span>${job.period} <span class="divider-sm">❖</span> ${job.location}</span>
+						</div>
+						<ul>
+							${job.items.map((item) => `<li>${item}</li>`).join('')}
+						</ul>
+					</article>
+				`,
+						)
+						.join(''),
+			},
+			{
+				id: 'skills-section',
+				title: 'Skills',
+				render: () =>
+					`<div id="skills-container">${data.skills
+						.map((s) => `<ul><li><strong>${s.title}:</strong> ${s.items.join(', ')}</li></ul>`)
+						.join('')}</div>`,
+			},
+			{
+				id: 'education-section',
+				title: 'Education',
+				render: () => data.education.map((edu) => `<p>${edu}</p>`).join(''),
+			},
+			{
+				id: 'interests-section',
+				title: 'Interests',
+				render: () => data.interests.map((i) => `<p>${i}</p>`).join(''),
+			},
+			{
+				id: 'references-section',
+				title: 'References',
+				render: () => data.references.map((i) => `<p>${i}</p>`).join(''),
+			},
+		]
 
-		// Experience
-		data.experience.forEach((job) => {
-			const article = document.createElement('article')
-			article.innerHTML = `
-        <div class="job">
-          <h3>${job.company} — ${job.role}</h3>
-          <span>${job.period} <span class="divider-sm">❖</span> ${job.location}</span>
-        </div>
-        <ul>
-          ${job.items.map((item) => `<li>${item}</li>`).join('')}
-        </ul>
-      `
-			expSection.appendChild(article)
+		// Loop through sections and create them
+		sections.forEach((section) => {
+			const sectionElement = document.createElement('section')
+			sectionElement.id = section.id
+			sectionElement.innerHTML = `
+				<h2>${section.title}</h2>
+				${section.render()}
+			`
+			sectionsContainer.appendChild(sectionElement)
 		})
-		expSection.classList.remove('hidden')
-
-		// Skills
-		skillsContainer.innerHTML = data.skills
-			.map((s) => `<ul><li><strong>${s.title}:</strong> ${s.items.join(', ')}</li></ul>`)
-			.join('')
-		document.getElementById('skills-section').classList.remove('hidden')
-
-		// Education
-		eduSection.innerHTML += data.education.map((edu) => `<p>${edu}</p>`).join('')
-		eduSection.classList.remove('hidden')
-
-		// Interests
-		interestsSection.innerHTML += data.interests.map((i) => `<p>${i}</p>`).join('')
-		interestsSection.classList.remove('hidden')
-
-		// References
-		referencesSection.innerHTML += data.references.map((i) => `<p>${i}</p>`).join('')
-		referencesSection.classList.remove('hidden')
 
 		// Hide loader
 		setTimeout(() => {
