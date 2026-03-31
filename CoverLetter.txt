@@ -1,0 +1,12 @@
+Dear Bright Network,
+
+I am excited to apply for the Frontend Engineer role at Bright Network. With over three years of professional experience building production-ready web and mobile applications using React, TypeScript, Vite, Tailwind CSS, and PostCSS, I bring a strong foundation in modern frontend development and state management patterns. My experience includes developing responsive, user-centric interfaces, maintaining complex applications, and implementing performant solutions with React Query and Zustand for global state management.
+
+I take pride in building maintainable, scalable systems that balance usability, accessibility, and visual consistency. I enjoy collaborating with designers, engineers, and product managers to translate requirements into polished components and intuitive user experiences. My work has consistently focused on performance optimization, code quality, and leveraging modern frontend patterns to improve reliability and maintainability across web and mobile platforms.
+
+Bright Network’s mission to upskill the next generation and its emphasis on a positive, inclusive culture resonate strongly with me. I am particularly drawn to the opportunity to contribute to both UK and German platforms, and working within a flexible “work from anywhere” policy while benefiting from a supportive, high-growth team environment.
+
+I would welcome the chance to bring my expertise and passion for frontend development to Bright Network and contribute to your mission of connecting talent with opportunity.
+
+Best regards,
+Nikolaos Kourniotis
