@@ -8,7 +8,7 @@
 		"github": "https://github.com/NiKourn",
 		"linkedin": "https://www.linkedin.com/in/nikolaos-kourniotis779/"
 	},
-	"summary": "Frontend Software Developer with 4 years of UK experience architecting and maintaining production mobile and web applications. Specialize in building cross-platform Ionic apps (iOS/Android) and scalable Next.js applications with TypeScript. Proven ability to work autonomously, owning entire application lifecycles from concept to deployment while collaborating on strategic decisions.",
+	"summary": "Frontend Software Developer with 4 years of UK experience architecting and maintaining production mobile and web applications. Specialise in building cross-platform Ionic apps (iOS/Android) and scalable Next.js applications with TypeScript. Proven ability to work autonomously, owning entire application lifecycles from concept to deployment while collaborating on strategic decisions.",
 	"experience": [
 		{
 			"company": "History & Heraldry",
@@ -16,11 +16,11 @@
 			"period": "May 2022 – Present",
 			"location": "Rotherham, UK",
 			"items": [
-				"Sole developer responsible for 3 production Ionic apps deployed on iOS and Android, managing full lifecycle from requirements gathering through App Store releases and ongoing maintenance.",
-				"Build cross-platform mobile applications using Ionic 8, Capacitor 8, React 19, and TypeScript, implementing features like barcode scanning, RESTful API integration, and Firebase push notifications.",
-				"Architect and develop an enterprise Next.js 16 monorepo dashboard integrating Business Central ERP with internal systems, implementing custom authentication, token rotation, and database layer using Prisma ORM with MariaDB.",
-				"Develop modular monorepo architecture with npm workspaces, creating reusable packages for authentication, database access, roles/permissions, translations, and UI components.",
-				"Maintain and extend legacy barcode generation system, managing unique barcode allocation for products with validation logic to prevent duplicates and ensure inventory integrity.",
+				"Responsible for 3 production Ionic apps published on iOS and Android, managing full lifecycle from requirements gathering through App Store releases and ongoing maintenance.",
+				"Develop cross-platform mobile applications using Ionic 8, Capacitor 8, React 19, and TypeScript, implementing features like barcode scanning, RESTful API integration, and Firebase push notifications.",
+				"Designing and building an enterprise Next.js 16 monorepo dashboard to integrate Business Central ERP with internal systems, with custom authentication, token rotation, and database layer using Prisma ORM with MariaDB.",
+				"Develop modular monorepo structure with npm workspaces, creating reusable packages for authentication, database access, roles/permissions, translations, and UI components.",
+				"Maintain and extend legacy barcode generation system, handling unique barcode assignment for products with validation logic to prevent duplicates and ensure inventory consistency.",
 				"Design and implement scalable state management patterns using TanStack Query for server state and Zustand for client state, with React Hook Form + Zod for type-safe validation.",
 				"Integrate Sentry error tracking, Firebase Analytics, and build comprehensive E2E test suites with Cypress to ensure application stability."
 			]

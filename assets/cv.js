@@ -33,6 +33,14 @@ fetch('./data/cv.json')
 				render: () => `<p>${data.summary}</p>`,
 			},
 			{
+				id: 'skills-section',
+				title: 'Skills',
+				render: () =>
+					`<div id="skills-container">${data.skills
+						.map((s) => `<ul><li><strong>${s.title}:</strong> ${s.items.join(', ')}</li></ul>`)
+						.join('')}</div>`,
+			},
+			{
 				id: 'experience-section',
 				title: 'Experience',
 				render: () =>
@@ -51,14 +59,6 @@ fetch('./data/cv.json')
 				`,
 						)
 						.join(''),
-			},
-			{
-				id: 'skills-section',
-				title: 'Skills',
-				render: () =>
-					`<div id="skills-container">${data.skills
-						.map((s) => `<ul><li><strong>${s.title}:</strong> ${s.items.join(', ')}</li></ul>`)
-						.join('')}</div>`,
 			},
 			{
 				id: 'education-section',
