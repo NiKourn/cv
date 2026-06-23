@@ -8,7 +8,7 @@
 		"github": "https://github.com/NiKourn",
 		"linkedin": "https://www.linkedin.com/in/nikolaos-kourniotis779/"
 	},
-	"summary": "Frontend Software Developer with 4 years of UK experience architecting and maintaining production mobile and web applications. Specialise in building cross-platform Ionic apps (iOS/Android) and scalable Next.js applications with TypeScript. Proven ability to work autonomously, owning entire application lifecycles from concept to deployment while collaborating on strategic decisions.",
+	"summary": "Frontend Software Developer with 4 years of UK experience building and maintaining production mobile and web applications. Specialise in cross-platform Ionic apps for iOS/Android and scalable Next.js applications with TypeScript. Comfortable working autonomously, owning application lifecycles from requirements and architecture through deployment and maintenance.",
 	"experience": [
 		{
 			"company": "History & Heraldry",
@@ -16,13 +16,12 @@
 			"period": "May 2022 – Present",
 			"location": "Rotherham, UK",
 			"items": [
-				"Responsible for 3 production Ionic apps published on iOS and Android, managing full lifecycle from requirements gathering through App Store releases and ongoing maintenance.",
-				"Develop cross-platform mobile applications using Ionic 8, Capacitor 8, React 19, and TypeScript, implementing features like barcode scanning, RESTful API integration, and Firebase push notifications.",
-				"Designing and building an enterprise Next.js 16 monorepo dashboard to integrate Business Central ERP with internal systems, with custom authentication, token rotation, and database layer using Prisma ORM with MariaDB.",
-				"Develop modular monorepo structure with npm workspaces, creating reusable packages for authentication, database access, roles/permissions, translations, and UI components.",
-				"Maintain and extend legacy barcode generation system, handling unique barcode assignment for products with validation logic to prevent duplicates and ensure inventory consistency.",
-				"Design and implement scalable state management patterns using TanStack Query for server state and Zustand for client state, with React Hook Form + Zod for type-safe validation.",
-				"Integrate Sentry error tracking, Firebase Analytics, and build comprehensive E2E test suites with Cypress to ensure application stability."
+				"Build and evolve a scalable Next.js 16 dashboard platform using Prisma ORM and MariaDB, integrating Business Central ERP with internal systems.",
+				"Established core platform foundations including authentication, token rotation, permissions, multi-company context, internationalisation, theming, caching, and reusable npm workspace packages.",
+				"Own and maintain 3 production Ionic apps published on iOS and Android: 2 B2B apps built on a shared architecture with business-specific workflows, and 1 B2C dropshipping app.",
+				"Deliver mobile features with Ionic 8, Capacitor 8, React 19, and TypeScript, including barcode scanning, REST API integration, and Firebase push notifications.",
+				"Maintain and extend an internal barcode generation app, ensuring unique product barcode assignment with validation to prevent duplicates and protect inventory accuracy.",
+				"Improve app reliability through Sentry error tracking, Firebase Analytics, and Cypress E2E test coverage across key user flows."
 			]
 		},
 		{
@@ -49,52 +48,37 @@
 	"skills": [
 		{
 			"title": "Frontend & Mobile",
-			"items": [
-				"React 19",
-				"Next.js 16",
-				"TypeScript",
-				"Ionic 8",
-				"Capacitor 8",
-				"TanStack Query (React Query)",
-				"Zustand",
-				"React Hook Form",
-				"Zod",
-				"Tailwind CSS",
-				"Radix UI"
-			]
+			"items": ["React", "Next.js", "TypeScript", "JavaScript", "Ionic", "Capacitor", "Tailwind CSS", "Radix UI"]
 		},
 		{
-			"title": "Backend & Database",
-			"items": [
-				"Prisma ORM",
-				"MariaDB/MySQL",
-				"NextAuth",
-				"REST APIs",
-				"Node.js",
-				"Firebase (Auth, Analytics, Messaging)"
-			]
+			"title": "State, Forms & Validation",
+			"items": ["TanStack Query", "Zustand", "React Hook Form", "Zod", "i18next"]
 		},
 		{
-			"title": "Architecture & Tooling",
+			"title": "Backend & Data",
+			"items": ["Prisma ORM", "MariaDB/MySQL", "NextAuth", "REST APIs", "Node.js", "Firebase"]
+		},
+		{
+			"title": "Tooling & Delivery",
 			"items": [
-				"npm Workspaces (Monorepo)",
-				"Vite",
-				"Cypress (E2E)",
+				"npm Workspaces",
+				"Monorepo architecture",
+				"Next.js caching",
+				"Cypress E2E",
 				"Sentry",
-				"i18next",
 				"Git",
 				"Docker",
-				"iOS/Android deployment"
+				"App Store / Play Store deployment"
 			]
 		},
 		{
-			"title": "Legacy/Additional",
-			"items": ["PHP", "WordPress", "jQuery", "SASS/SCSS"]
+			"title": "Additional",
+			"items": ["PHP", "WordPress", "WooCommerce", "jQuery", "SASS/SCSS"]
 		}
 	],
 	"education": [
-		"University of Lamia - Degree in Electronics",
-		"Institute of Vocation Training — Computers and Electronics Office Machines Engineer (Jul 2003, Aigaleo, GR)",
+		"University of Lamia - Studies in Electronics, completed 2 years of coursework",
+		"Institute of Vocational Training — Computers and Electronics Office Machines Engineer (Jul 2003, Aigaleo, GR)",
 		"Electronics College — Computer Electronic Systems and Networks (Jul 2002, Dafni, GR)"
 	],
 	"interests": ["Guitar & Drums (former alternative rock band member)"],
