@@ -12,16 +12,16 @@
 	"experience": [
 		{
 			"company": "History & Heraldry",
-			"role": "Frontend Developer/Software Developer",
+			"role": "Software Developer",
 			"period": "May 2022 – Present",
 			"location": "Rotherham, UK",
 			"items": [
-				"Build and evolve a scalable Next.js 16 dashboard platform using Prisma ORM and MariaDB, integrating Business Central ERP with internal systems.",
-				"Established core platform foundations including authentication, token rotation, permissions, multi-company context, internationalisation, theming, caching, and reusable npm workspace packages.",
-				"Own and maintain 3 production Ionic apps published on iOS and Android: 2 B2B apps built on a shared architecture with business-specific workflows, and 1 B2C dropshipping app.",
-				"Deliver mobile features with Ionic 8, Capacitor 8, React 19, and TypeScript, including barcode scanning, REST API integration, and Firebase push notifications.",
-				"Maintain and extend an internal barcode generation app, ensuring unique product barcode assignment with validation to prevent duplicates and protect inventory accuracy.",
-				"Improve app reliability through Sentry error tracking, Firebase Analytics, and Cypress E2E test coverage across key user flows."
+				"Build and evolve a scalable <strong>Next.js 16</strong> dashboard platform using <strong>Prisma ORM</strong> and <strong>MariaDB</strong>, integrating <strong>Business Central ERP</strong> with internal systems.",
+				"Established core platform foundations including <strong>authentication</strong>, <strong>token rotation</strong>, <strong>permissions</strong>, <strong>multi-company context</strong>, <strong>internationalisation</strong>, <strong>theming</strong>, <strong>caching</strong>, and reusable <strong>npm workspace packages</strong>.",
+				"Own and maintain 3 production <strong>Ionic</strong> apps published on <strong>iOS</strong> and <strong>Android</strong>: 2 <strong>B2B</strong> apps built on a shared architecture with business-specific workflows, and 1 <strong>B2C</strong> dropshipping app.",
+				"Deliver mobile features with <strong>Ionic 8</strong>, <strong>Capacitor 8</strong>, <strong>React 19</strong>, and <strong>TypeScript</strong>, including <strong>barcode scanning</strong>, <strong>REST API integration</strong>, and <strong>Firebase push notifications</strong>.",
+				"Maintain and extend an internal <strong>barcode generation app</strong>, ensuring unique product barcode assignment with validation to prevent duplicates and protect inventory accuracy.",
+				"Improve app reliability through <strong>Sentry</strong> error tracking, <strong>Firebase Analytics</strong>, and <strong>Cypress E2E</strong> test coverage across key user flows."
 			]
 		},
 		{
@@ -31,7 +31,7 @@
 			"location": "Great Yarmouth, UK",
 			"items": [
 				"Delivered small-scale websites and IT services for local businesses.",
-				"Built and maintained WordPress websites and plugins, handling both frontend and backend tasks."
+				"Built and maintained <strong>WordPress</strong> websites and plugins, handling both frontend and backend tasks."
 			]
 		},
 		{
@@ -40,7 +40,7 @@
 			"period": "Feb 2016 – Jun 2019",
 			"location": "Athens, GR",
 			"items": [
-				"Built e-commerce and corporate websites with WordPress, WooCommerce, and custom plugins.",
+				"Built e-commerce and corporate websites with <strong>WordPress</strong>, <strong>WooCommerce</strong>, and custom plugins.",
 				"Provided IT support and troubleshooting for local clients."
 			]
 		}

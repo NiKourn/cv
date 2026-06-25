@@ -27,19 +27,12 @@ fetch('./data/cv.json')
 
 		// Define sections configuration from cv.json
 		const sections = [
-			{
-				id: 'summary-section',
-				title: 'Professional Summary',
-				render: () => `<p>${data.summary}</p>`,
-			},
-			{
-				id: 'skills-section',
-				title: 'Skills',
-				render: () =>
-					`<div id="skills-container">${data.skills
-						.map((s) => `<ul><li><strong>${s.title}:</strong> ${s.items.join(', ')}</li></ul>`)
-						.join('')}</div>`,
-			},
+			// {
+			// 	id: 'summary-section',
+			// 	title: 'Professional Summary',
+			// 	render: () => `<p>${data.summary}</p>`,
+			// },
+
 			{
 				id: 'experience-section',
 				title: 'Experience',
@@ -64,6 +57,14 @@ fetch('./data/cv.json')
 				id: 'education-section',
 				title: 'Education',
 				render: () => data.education.map((edu) => `<p>${edu}</p>`).join(''),
+			},
+			{
+				id: 'skills-section',
+				title: 'Skills',
+				render: () =>
+					`<div id="skills-container">${data.skills
+						.map((s) => `<ul><li><strong>${s.title}:</strong> ${s.items.join(', ')}</li></ul>`)
+						.join('')}</div>`,
 			},
 			{
 				id: 'interests-section',
