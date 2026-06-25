@@ -8,7 +8,7 @@
 		"github": "https://github.com/NiKourn",
 		"linkedin": "https://www.linkedin.com/in/nikolaos-kourniotis779/"
 	},
-	"summary": "Frontend Software Developer with 4 years of UK experience building and maintaining production mobile and web applications. Specialise in cross-platform Ionic apps for iOS/Android and scalable Next.js applications with TypeScript. Comfortable working autonomously, owning application lifecycles from requirements and architecture through deployment and maintenance.",
+	"summary": "Frontend Software Developer with 4 years of UK experience and 10+ years working with websites and web technologies overall. I mainly work with React, TypeScript, Next.js and Ionic, building internal tools, dashboards and mobile apps that people use for real business workflows. I am comfortable working independently, taking a feature from an initial idea through to implementation, testing, deployment and ongoing support.",
 	"experience": [
 		{
 			"company": "History & Heraldry",
@@ -16,12 +16,14 @@
 			"period": "May 2022 – Present",
 			"location": "Rotherham, UK",
 			"items": [
-				"Build and evolve a scalable <strong>Next.js 16</strong> dashboard platform using <strong>Prisma ORM</strong> and <strong>MariaDB</strong>, integrating <strong>Business Central ERP</strong> with internal systems.",
-				"Established core platform foundations including <strong>authentication</strong>, <strong>token rotation</strong>, <strong>permissions</strong>, <strong>multi-company context</strong>, <strong>internationalisation</strong>, <strong>theming</strong>, <strong>caching</strong>, and reusable <strong>npm workspace packages</strong>.",
-				"Own and maintain 3 production <strong>Ionic</strong> apps published on <strong>iOS</strong> and <strong>Android</strong>: 2 <strong>B2B</strong> apps built on a shared architecture with business-specific workflows, and 1 <strong>B2C</strong> dropshipping app.",
-				"Deliver mobile features with <strong>Ionic 8</strong>, <strong>Capacitor 8</strong>, <strong>React 19</strong>, and <strong>TypeScript</strong>, including <strong>barcode scanning</strong>, <strong>REST API integration</strong>, and <strong>Firebase push notifications</strong>.",
-				"Maintain and extend an internal <strong>barcode generation app</strong>, ensuring unique product barcode assignment with validation to prevent duplicates and protect inventory accuracy.",
-				"Improve app reliability through <strong>Sentry</strong> error tracking, <strong>Firebase Analytics</strong>, and <strong>Cypress E2E</strong> test coverage across key user flows."
+				"Building a new internal <strong>Next.js 16</strong> dashboard with <strong>React</strong>, <strong>TypeScript</strong>, <strong>Prisma ORM</strong> and <strong>MariaDB</strong>, connecting company workflows with <strong>Business Central ERP</strong> data.",
+				"Built the main foundations for the platform, including <strong>authentication</strong>, <strong>permissions</strong>, <strong>multi-company support</strong>, <strong>internationalisation/localisation</strong>, <strong>theming</strong>, <strong>caching</strong> and shared <strong>npm workspace packages</strong>.",
+				"Set up <strong>CI/CD with GitHub Actions</strong> for the dashboard so builds and deployments are more repeatable, with less manual work and fewer chances for release errors.",
+				"Improved how user sessions are handled by adding <strong>JWT short-lived tokens</strong>, <strong>token rotation</strong> and permission-based checks, helping protect ERP-linked company data and meet external <strong>GDPR/security review</strong> requirements.",
+				"Maintain 3 production <strong>Ionic</strong> apps on <strong>iOS</strong> and <strong>Android</strong>: 2 <strong>B2B</strong> apps that share a similar structure, and 1 <strong>B2C</strong> dropshipping app.",
+				"Build mobile app features with <strong>Ionic 8</strong>, <strong>Capacitor 8</strong>, <strong>React 19</strong> and <strong>TypeScript</strong>, including <strong>barcode scanning</strong>, order/customer workflows, <strong>REST API integration</strong> and <strong>Firebase push notifications</strong> across the B2B and B2C apps.",
+				"Maintain an internal <strong>barcode generation app</strong> used to create unique product barcodes and prevent duplicate assignments.",
+				"Use <strong>Sentry</strong>, <strong>Firebase Analytics</strong> and <strong>Cypress E2E</strong> tests to find issues earlier and make key app flows more reliable."
 			]
 		},
 		{
@@ -30,8 +32,8 @@
 			"period": "Mar 2021 – May 2022",
 			"location": "Great Yarmouth, UK",
 			"items": [
-				"Delivered small-scale websites and IT services for local businesses.",
-				"Built and maintained <strong>WordPress</strong> websites and plugins, handling both frontend and backend tasks."
+				"Built small business websites and provided practical IT support for local clients.",
+				"Worked on <strong>WordPress</strong> sites and plugins, covering both frontend changes and backend fixes."
 			]
 		},
 		{
@@ -40,8 +42,8 @@
 			"period": "Feb 2016 – Jun 2019",
 			"location": "Athens, GR",
 			"items": [
-				"Built e-commerce and corporate websites with <strong>WordPress</strong>, <strong>WooCommerce</strong>, and custom plugins.",
-				"Provided IT support and troubleshooting for local clients."
+				"Built e-commerce and company websites with <strong>WordPress</strong>, <strong>WooCommerce</strong> and custom plugins.",
+				"Helped local clients with IT support, troubleshooting and day-to-day technical issues."
 			]
 		}
 	],
@@ -63,7 +65,10 @@
 			"items": [
 				"npm Workspaces",
 				"Monorepo architecture",
+				"GitHub Actions",
+				"CI/CD",
 				"Next.js caching",
+				"JWT",
 				"Cypress E2E",
 				"Sentry",
 				"Git",
