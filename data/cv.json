@@ -16,14 +16,12 @@
 			"period": "May 2022 – Present",
 			"location": "Rotherham, UK",
 			"items": [
-				"Building a new internal <strong>Next.js 16</strong> dashboard with <strong>React</strong>, <strong>TypeScript</strong>, <strong>Prisma ORM</strong> and <strong>MariaDB</strong>, connecting company workflows with <strong>Business Central ERP</strong> data.",
-				"Built the main foundations for the platform, including <strong>authentication</strong>, <strong>permissions</strong>, <strong>multi-company support</strong>, <strong>internationalisation/localisation</strong>, <strong>theming</strong>, <strong>caching</strong> and shared <strong>npm workspace packages</strong>.",
-				"Set up <strong>CI/CD with GitHub Actions</strong> for the dashboard so builds and deployments are more repeatable, with less manual work and fewer chances for release errors.",
-				"Improved how user sessions are handled by adding <strong>JWT short-lived tokens</strong>, <strong>token rotation</strong> and permission-based checks, helping protect ERP-linked company data and meet external <strong>GDPR/security review</strong> requirements.",
-				"Maintain 3 production <strong>Ionic</strong> apps on <strong>iOS</strong> and <strong>Android</strong>: 2 <strong>B2B</strong> apps that share a similar structure, and 1 <strong>B2C</strong> dropshipping app.",
-				"Build mobile app features with <strong>Ionic 8</strong>, <strong>Capacitor 8</strong>, <strong>React 19</strong> and <strong>TypeScript</strong>, including <strong>barcode scanning</strong>, order/customer workflows, <strong>REST API integration</strong> and <strong>Firebase push notifications</strong> across the B2B and B2C apps.",
-				"Maintain an internal <strong>barcode generation app</strong> used to create unique product barcodes and prevent duplicate assignments.",
-				"Use <strong>Sentry</strong>, <strong>Firebase Analytics</strong> and <strong>Cypress E2E</strong> tests to find issues earlier and make key app flows more reliable."
+				"Designing and building a new internal Next.js and TypeScript platform that connects company workflows with Microsoft Business Central ERP, working across the frontend, backend, APIs and database layer.",
+				"Built the core platform architecture, including <strong>authentication</strong>, <strong>roles and permissions</strong>, multi-company support, localisation, caching and reusable <strong>npm workspace packages</strong>, making the system easier to extend and maintain.",
+				"Improved platform security by implementing <strong>short-lived JWTs</strong>, <strong>token rotation</strong> and permission-based access controls, helping protect ERP-linked company data and meet external <strong>GDPR and security review</strong> requirements.",
+				"Set up <strong>CI/CD with GitHub Actions</strong> and introduced <strong>Cypress E2E testing</strong> and <strong>Sentry</strong> monitoring, making deployments more repeatable and helping identify issues before and after release.",
+				"Own the development and maintenance of <strong>3 production Ionic apps</strong> across <strong>iOS and Android</strong>, including two B2B ordering apps and a B2C ecommerce/dropshipping app, working from requirements through development, testing and release.",
+				"Develop mobile features using <strong>React</strong>, <strong>TypeScript</strong>, <strong>Ionic</strong> and <strong>Capacitor</strong>, including REST API integrations, barcode scanning, order and customer workflows, and Firebase push notifications."
 			]
 		},
 		{
