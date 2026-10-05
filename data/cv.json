@@ -1,14 +1,14 @@
 {
 	"header": {
 		"name": "Nikolaos Kourniotis",
-		"title": "Frontend Software Developer (React, TypeScript, Next.js)",
+		"title": "Software Developer (React, TypeScript, Next.js)",
 		"location": "Mexborough/Doncaster, UK",
 		"phone": "07721847499",
 		"email": "nikourn@gmail.com",
 		"github": "https://github.com/NiKourn",
 		"linkedin": "https://www.linkedin.com/in/nikolaos-kourniotis779/"
 	},
-	"summary": "Frontend Software Developer with 4 years of UK experience and 10+ years working with websites and web technologies overall. I mainly work with React, TypeScript, Next.js and Ionic, building internal tools, dashboards and mobile apps that people use for real business workflows. I am comfortable working independently, taking a feature from an initial idea through to implementation, testing, deployment and ongoing support.",
+	"summary": "I am a Software Developer with 4 years of UK experience and 10+ years working with websites and web technologies overall. I mainly work with React, TypeScript, Next.js and Ionic, building internal tools, dashboards and mobile apps that people use for real business workflows. I am comfortable working independently, taking a feature from an initial idea through to implementation, testing, deployment and ongoing support.",
 	"experience": [
 		{
 			"company": "History & Heraldry",
@@ -16,7 +16,7 @@
 			"period": "May 2022 – Present",
 			"location": "Rotherham, UK",
 			"items": [
-				"Designing and building a new internal Next.js and TypeScript platform that connects company workflows with Microsoft Business Central ERP, working across the frontend, backend, APIs and database layer.",
+				"Architecting and developing a multi-application internal platform using Next.js and TypeScript, integrating company workflows with Microsoft Business Central and working across the frontend, server-side logic, APIs and database layer.",
 				"Built the core platform architecture, including <strong>authentication</strong>, <strong>roles and permissions</strong>, multi-company support, localisation, caching and reusable <strong>npm workspace packages</strong>, making the system easier to extend and maintain.",
 				"Improved platform security by implementing <strong>short-lived JWTs</strong>, <strong>token rotation</strong> and permission-based access controls, helping protect ERP-linked company data and meet external <strong>GDPR and security review</strong> requirements.",
 				"Set up <strong>CI/CD with GitHub Actions</strong> and introduced <strong>Cypress E2E testing</strong> and <strong>Sentry</strong> monitoring, making deployments more repeatable and helping identify issues before and after release.",
